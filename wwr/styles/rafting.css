@@ -1,13 +1,9 @@
-/* CSS for White Water Rafting - About Us page */
-
-/* 1. Universal selector reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. CSS variables */
 :root {
   --primary-color: #055a05; /* forest green */
   --accent1-color: #264653; /* dark slate blue */
@@ -15,48 +11,40 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* 3. Body text */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
-/* 4. Limit page width and center content */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* 5. Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* 6. Basic spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* 7. Remove underline for social media links */
 .socialmedia a {
   text-decoration: none;
 }
 
-/* 8. Hero div setup */
 .hero {
   position: relative;
 }
 
-/* Hero image fills width */
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Hero heading over image */
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -68,14 +56,12 @@ nav, p, section, article {
   color: #fff;
 }
 
-/* Hero article positioned over hero image */
 .hero article {
   position: absolute;
   top: 100px;
   left: 16px;
 }
 
-/* Article image floated right */
 .hero article img {
   float: right;
   width: 125px;
