@@ -59,14 +59,14 @@ nav, p, section, article {
 
 .adventure-gallery {
   display: flex;
-  justify-content: space-between; 
-  flex-wrap: wrap; 
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
 .adventure-gallery figure {
   text-align: center;
-  flex: 8px; 
+  flex: 1 1 calc(20% - 16px); /* Fix: each figure takes ~20% width minus gap */
 }
 
 .adventure-gallery img {
