@@ -144,7 +144,7 @@ footer .socialmedia {
   gap: 8px;
 }
 
-/* Contact Info */
+/* Contact Info Box */
 .contact-info {
   margin: 16px;
   padding: 16px;
@@ -152,18 +152,49 @@ footer .socialmedia {
   border-radius: 8px;
 }
 
-/* Employee Profiles */
+/* Employee Profiles - "Meet Our Team" */
+.team-section {
+  margin: 24px 16px;
+}
+
+.team-section h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: left; /* heading stays at top-left */
+  margin-bottom: 16px;
+}
+
 .employee-gallery {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin: 16px 0;
+  justify-content: space-between; /* space evenly across row */
+  flex-wrap: nowrap; /* keep all 3 in one row */
+  gap: 24px;
 }
 
 .employee-gallery figure {
   text-align: center;
-  flex: 1 1 calc(33% - 16px);
+  flex: 1 1 0; /* equal width for all figures */
+  max-width: 30%; /* ensures 3 fit in row */
+  margin: 0 auto;
+}
+
+.employee-gallery figure img {
+  width: 100%;
+  height: 200px; /* fixed height for all */
+  object-fit: cover; /* prevents stretching */
+  border: 4px solid var(--primary-color); /* uniform border */
+  border-radius: 6px;
+  padding: 4px;
+  display: block;
+  margin: 0 auto 12px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.employee-gallery figure figcaption {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Contact Form */
@@ -174,10 +205,15 @@ footer .socialmedia {
   border-radius: 8px;
 }
 
+.contact-form form {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
 .contact-form .form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 12px;
 }
 
 .contact-form label {
@@ -185,56 +221,30 @@ footer .socialmedia {
   font-weight: bold;
 }
 
-.contact-form input, 
-.contact-form textarea, 
-.contact-form button {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
   padding: 8px;
-  font-size: 1rem;
+  border: 2px solid var(--primary-color);
   border-radius: 4px;
-  border: 1px solid #ccc;
 }
 
-.contact-form button {
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.contact-form button[type="submit"] {
   background-color: var(--primary-color);
   color: #fff;
+  padding: 10px 16px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #033a03;
-}
-
-/* Employee Profiles - gallery layout */
-.employee-gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px; /* spacing between each figure */
-  margin: 16px 0;
-}
-
-/* Each employee figure */
-.employee-gallery figure {
-  text-align: center;
-  flex: 1 1 calc(30% - 16px); /* 3 images per row with spacing */
-}
-
-/* Employee image styling */
-.employee-gallery figure img {
-  width: 100%;
-  max-width: 200px; /* keeps images a reasonable size */
-  height: auto;
-  border: 3px solid var(--primary-color); /* adds border */
-  padding: 4px; /* optional spacing between image and border */
-  border-radius: 4px; /* subtle rounding of corners */
-  display: block;
-  margin: 0 auto 8px auto; /* centers image and adds spacing for caption */
-}
-
-/* Employee captions */
-.employee-gallery figure figcaption {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
   font-weight: bold;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--accent1-color);
 }

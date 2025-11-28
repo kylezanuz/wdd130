@@ -21,80 +21,70 @@
   </header>
 
   <main>
-    <!-- Company Information Section -->
-    <section class="contact-info">
-      <h1>Contact Us</h1>
-      <p><strong>Address:</strong> 123 Rapids Lane, River City, RC 45678</p>
-      <p><strong>Phone:</strong> (123) 456-7890 | (123) 555-6789</p>
-      <p><strong>Email:</strong> info@wwrafting.com</p>
+  <h1>White Water Rafting Co. - Contact Us</h1>
 
-      <!-- Google Map Embed -->
+  <!-- Company Information -->
+  <section class="company-info">
+    <h2>Our Contact Information</h2>
+    <p><strong>Address:</strong> 123 Rapids Lane, Adventure City, USA</p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+    <!-- Google Map -->
+    <div class="map-container">
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.914817238236!2d-75.56714438466801!3d-13.163141690714458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7ee92eeb1%3A0x9ec8edb4c9315a!2sMachu%20Picchu!5e0!3m2!1sen!2s!4v1700000000000" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.948!2d-77.0368707!3d38.9071923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU0JzQyLjAiTiA3N8KwMDInMzMuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" 
         width="100%" 
         height="300" 
         allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+        loading="lazy">
       </iframe>
-    </section>
+    </div>
+  </section>
 
-    <!-- Employee Profiles Section -->
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-gallery">
-        <figure>
-          <img src="images/employee1.jpg" alt="Jane Doe - Adventure Guide" width="150" height="150">
-          <figcaption>Jane Doe - Adventure Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="John Smith - Rafting Expert" width="150" height="150">
-          <figcaption>John Smith - Rafting Expert</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Emily White - Reservations Manager" width="150" height="150">
-          <figcaption>Emily White - Reservations Manager</figcaption>
-        </figure>
-      </div>
-    </section>
+  <!-- Employee Profiles -->
+<section class="team-section">
+  <h2>Meet Our Team</h2>
+  <div class="employee-gallery">
+    <figure>
+      <img src="images/employee1.jpg" alt="Employee Profile">
+      <figcaption>Employee Profile</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee2.jpg" alt="Employee Profile">
+      <figcaption>Employee Profile</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee3.jpg" alt="Employee Profile">
+      <figcaption>Employee Profile</figcaption>
+    </figure>
+  </div>
+</section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form>
-        <div class="form-item">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-    
-        <div class="form-item">
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
 
-        <div class="form-item">
-          <p>Purpose of Message:</p>
-          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-        </div>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        <div class="form-item">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
-        </div>
+      <p>Purpose of your message:</p>
+      <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+      <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+      <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-        <div class="form-item">
-          <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
-        </div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-        <div class="form-item">
-          <button type="submit">Send Message</button>
-        </div>
-      </form>
-    </section>
-  </main>
+      <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
+      <button type="submit">Send Your Message</button>
+    </form>
+  </section>
+</main>
   <footer>
     <p>©2025 White Water Rafting Co. — Kyle Danielle Santiago</p>
     <nav class="socialmedia">
