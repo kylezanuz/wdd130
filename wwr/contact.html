@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting - About Us</title>
-  <meta name="description" content="About White Water Rafting - our purpose, history, and adventures.">
+  <title>White Water Rafting - Contact Us</title>
+  <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or website suggestions.">
   <meta name="author" content="Kyle Danielle Santiago">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -22,50 +21,79 @@
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting hero image">
-      <h1>White Water Rafting Co.</h1>
+    <!-- Company Information Section -->
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p><strong>Address:</strong> 123 Rapids Lane, River City, RC 45678</p>
+      <p><strong>Phone:</strong> (123) 456-7890 | (123) 555-6789</p>
+      <p><strong>Email:</strong> info@wwrafting.com</p>
 
-      <article>
-        <img src="images/happy-client.jpg" alt="happy client" width="125" height="125">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, natus.</p>
-      </article>
-  </div>
+      <!-- Google Map Embed -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.914817238236!2d-75.56714438466801!3d-13.163141690714458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7ee92eeb1%3A0x9ec8edb4c9315a!2sMachu%20Picchu!5e0!3m2!1sen!2s!4v1700000000000" 
+        width="100%" 
+        height="300" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
 
-    <section>
-      <h2>History</h2>
-      <div class="history">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis alias assumenda voluptatem error quis libero. Eos nulla quas et eligendi?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, illo?</p>
-      </div>
-  </section>
-
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventure-gallery">
+    <!-- Employee Profiles Section -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
         <figure>
-          <img src="images/rafting.jpg" alt="White Water Rafting">
-          <figcaption>White Water Rafting</figcaption>
+          <img src="images/employee1.jpg" alt="Jane Doe - Adventure Guide" width="150" height="150">
+          <figcaption>Jane Doe - Adventure Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting-splash.jpg" alt="Half-Day Whitewater Tour">
-          <figcaption>Half-Day Whitewater Tour</figcaption>
+          <img src="images/employee2.jpg" alt="John Smith - Rafting Expert" width="150" height="150">
+          <figcaption>John Smith - Rafting Expert</figcaption>
         </figure>
         <figure>
-          <img src="images/river-photography-tour.jpg" alt="River Photography Tour">
-          <figcaption>River Photography Tour</figcaption>
-        </figure>
-        <figure>
-          <img src="images/kayak.jpg" alt="Kayaking Adventure">
-          <figcaption>Kayaking Adventure</figcaption>
-        </figure>
-        <figure>
-          <img src="images/overnight-rafting.jpg" alt="Overnight Rafting Trip">
-          <figcaption>Overnight Rafting Trip</figcaption>
+          <img src="images/employee3.jpg" alt="Emily White - Reservations Manager" width="150" height="150">
+          <figcaption>Emily White - Reservations Manager</figcaption>
         </figure>
       </div>
     </section>
-</main>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <div class="form-item">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div class="form-item">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-item">
+          <p>Purpose of Message:</p>
+          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+        </div>
+
+        <div class="form-item">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <div class="form-item">
+          <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <div class="form-item">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>©2025 White Water Rafting Co. — Kyle Danielle Santiago</p>
@@ -74,7 +102,6 @@
       <a href="https://linkedin.com"><img src="images/linkedin.png" alt="linkedin icon" width="32" height="32"></a>
       <a href="https://instagram.com"><img src="images/icon-ig.png" alt="instagram icon" width="32" height="32"></a>
     </nav>
-</footer>
-
+  </footer>
 </body>
 </html>

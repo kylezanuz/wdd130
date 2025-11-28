@@ -144,3 +144,97 @@ footer .socialmedia {
   gap: 8px;
 }
 
+/* Contact Info */
+.contact-info {
+  margin: 16px;
+  padding: 16px;
+  background-color: #e0f2f1;
+  border-radius: 8px;
+}
+
+/* Employee Profiles */
+.employee-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.employee-gallery figure {
+  text-align: center;
+  flex: 1 1 calc(33% - 16px);
+}
+
+/* Contact Form */
+.contact-form {
+  margin: 16px;
+  padding: 16px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+}
+
+.contact-form .form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.contact-form label {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #033a03;
+}
+
+/* Employee Profiles - gallery layout */
+.employee-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px; /* spacing between each figure */
+  margin: 16px 0;
+}
+
+/* Each employee figure */
+.employee-gallery figure {
+  text-align: center;
+  flex: 1 1 calc(30% - 16px); /* 3 images per row with spacing */
+}
+
+/* Employee image styling */
+.employee-gallery figure img {
+  width: 100%;
+  max-width: 200px; /* keeps images a reasonable size */
+  height: auto;
+  border: 3px solid var(--primary-color); /* adds border */
+  padding: 4px; /* optional spacing between image and border */
+  border-radius: 4px; /* subtle rounding of corners */
+  display: block;
+  margin: 0 auto 8px auto; /* centers image and adds spacing for caption */
+}
+
+/* Employee captions */
+.employee-gallery figure figcaption {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  font-weight: bold;
+}
