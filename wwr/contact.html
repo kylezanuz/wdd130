@@ -2,110 +2,96 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting Co. - Contact Us</title>
-  <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or to request more information about our rafting adventures.">
-  <meta name="author" content="Kyle Danielle Santiago">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting - Contact</title>
+  <meta name="description" content="Contact White Water Rafting for questions and bookings.">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-  <header>
-    <img src="images/logo.png" alt="WWR logo" width="128" height="128">
-    <nav>  
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <header class="header" role="banner">
+      <div class="logo, header-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="trips.html">Trips</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
 
-<main>
-  <h1>White Water Rafting Co. - Contact Us</h1>
+    <main>
+      <h1 class="center-title">White Water Rafting Co. - Contact Us</h1>
 
-  <!-- Company Information -->
-  <section class="company-info">
-    <h2>Our Contact Information</h2>
-    <p><strong>Address:</strong> 123 CBD Melbourne VIC, Australia, 45678</p>
-    <p><strong>Phone:</strong> (123) 456-7890</p>
-    <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+      <section class="box center-box company-info">
+        <h2 style="color:var(--header-footer)">Our Contact Information</h2>
+        <p style="color:var(--box-text)"><strong>Address:</strong> 123 CBD Melbourne VIC, Australia, 45678</p>
+        <p style="color:var(--box-text)"><strong>Phone:</strong> (123) 456-7890</p>
+        <p style="color:var(--box-text)"><strong>Email:</strong> info@whitewaterrafting.com</p>
+      </section>
 
-    <!-- Google Map -->
-    <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=..."
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </div>
-  </section>
+      <section class="map-form-section">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=..." title="Company location map" loading="lazy"></iframe>
+        </div>
 
-  <!-- Employee Profiles -->
-  <section class="team-section">
-    <h2>Meet Our Team</h2>
+        <div class="contact-form">
+          <h2 style="color:var(--header-footer)">Send Us a Message</h2>
+          <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" required>
 
-    <div class="employee-gallery">
-      <figure>
-        <img src="images/employee_profile1.bmp" alt="Employee Profile">
-        <figcaption>Employee Profile</figcaption>
-      </figure>
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" required>
 
-      <figure>
-        <img src="images/employee_profile2.bmp" alt="Employee Profile">
-        <figcaption>Employee Profile</figcaption>
-      </figure>
+            <p style="color:#222; font-weight:700;">Purpose of your message</p>
+            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-      <figure>
-        <img src="images/employee_profile3.bmp" alt="Employee Profile">
-        <figcaption>Employee Profile</figcaption>
-      </figure>
-    </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-  </section>
+            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
-  <!-- Contact Form -->
-  <section class="contact-form">
-    <h2>Send Us a Message</h2>
-    <form action="#" method="post">
+            <button class="btn" type="submit">Send Your Message</button>
+          </form>
+        </div>
+      </section>
 
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+      <section class="team">
+        <h2 style="color:var(--header-footer)">Meet Our Team</h2>
+        <div class="employee-gallery">
+          <figure class="employee-card">
+            <img src="images/employee_profile1.bmp" alt="Employee 1">
+            <figcaption>Employee 1</figcaption>
+          </figure>
+          <figure class="employee-card">
+            <img src="images/employee_profile2.bmp" alt="Employee 2">
+            <figcaption>Employee 2</figcaption>
+          </figure>
+          <figure class="employee-card">
+            <img src="images/employee_profile3.bmp" alt="Employee 3">
+            <figcaption>Employee 3</figcaption>
+          </figure>
+        </div>
+      </section>
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
+    </main>
 
-      <p>Purpose of your message:</p>
-      <label for="purpose-general">
-        <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
-      </label>
-      <label for="purpose-reservation">
-        <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
-      </label>
-      <label for="purpose-suggestion">
-        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
-      </label>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <label for="subscribe">
-      <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
-      </label>
-
-      <button type="submit">Send Your Message</button>
-    </form>
-  </section>
-</main>
-
-  <footer>
-    <p>©2025 White Water Rafting Co. — Kyle Danielle Santiago</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook icon" width="32" height="32"></a>
-      <a href="https://linkedin.com"><img src="images/linkedin.png" alt="linkedin icon" width="32" height="32"></a>
-      <a href="https://instagram.com"><img src="images/icon-ig.png" alt="instagram icon" width="32" height="32"></a>
-    </nav>
-  </footer>
+    <footer class="site-footer">
+      <div>©2025 White Water Rafting Co. — Kyle Danielle Santiago</div>
+      <div class="socialmedia">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/icon-ig.png" alt="Instagram"></a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

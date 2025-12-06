@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>White Water Rafting - About Us</title>
   <meta name="description" content="About White Water Rafting - our purpose, history, and adventures.">
-  <meta name="author" content="Kyle Danielle Santiago">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-  <header>
-    <img src="images/logo.png" alt="WWR logo" width="128" height="128">
-    <nav>  
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="wrapper">
+    <header class="header" role="banner">
+      <div class="header-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="trips.html">Trips</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
 
-  <main>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting hero image">
-      <h1>White Water Rafting Co.</h1>
+    <main>
+      <section class="hero-about">
+        <img src="images/hero.jpg" alt="Rafting" class="hero-img">
+        <div class="hero-text-bg">
+          <h1>White Water Rafting Co</h1>
+          <p>We translate adventure into lifelong memories — guided, safe, and fun.</p>
+        </div>
+      </section>
 
-      <article>
-        <img src="images/happy-client.jpg" alt="happy client" width="125" height="125">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, natus.</p>
-      </article>
+      <section class="box">
+        <h2>History</h2>
+        <div class="history">
+          <p style="color:var(--box-text);">Founded by river-lovers, we grew from small weekend trips to a full adventure operation with experienced guides.</p>
+          <p style="color:var(--box-text);">Our mission is safety, stewardship of nature, and unforgettable experiences for every guest.</p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>Adventure Awaits You!</h2>
+        <div class="adventure-gallery">
+          <figure class="card-img">
+            <img src="images/rafting.jpg" alt="White Water Rafting">
+            <figcaption style="color:var(--header-footer)">White Water Rafting</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/rafting-splash.jpg" alt="Half-Day Whitewater Tour">
+            <figcaption style="color:var(--header-footer)">Half-Day Whitewater Tour</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/river-photography-tour.jpg" alt="River Photography Tour">
+            <figcaption style="color:var(--header-footer)">River Photography Tour</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/kayak.jpg" alt="Kayaking Adventure">
+            <figcaption style="color:var(--header-footer)">Kayaking Adventure</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/overnight-rafting.jpg" alt="Overnight Rafting Trip">
+            <figcaption style="color:var(--header-footer)">Overnight Rafting Trip</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>©2025 White Water Rafting Co. — Kyle Danielle Santiago</div>
+      <div class="socialmedia">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/icon-ig.png" alt="Instagram"></a>
+      </div>
+    </footer>
   </div>
-
-    <section>
-      <h2>History</h2>
-      <div class="history">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis alias assumenda voluptatem error quis libero. Eos nulla quas et eligendi?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, illo?</p>
-      </div>
-  </section>
-
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventure-gallery">
-        <figure>
-          <img src="images/rafting.jpg" alt="White Water Rafting">
-          <figcaption>White Water Rafting</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting-splash.jpg" alt="Half-Day Whitewater Tour">
-          <figcaption>Half-Day Whitewater Tour</figcaption>
-        </figure>
-        <figure>
-          <img src="images/river-photography-tour.jpg" alt="River Photography Tour">
-          <figcaption>River Photography Tour</figcaption>
-        </figure>
-        <figure>
-          <img src="images/kayak.jpg" alt="Kayaking Adventure">
-          <figcaption>Kayaking Adventure</figcaption>
-        </figure>
-        <figure>
-          <img src="images/overnight-rafting.jpg" alt="Overnight Rafting Trip">
-          <figcaption>Overnight Rafting Trip</figcaption>
-        </figure>
-      </div>
-    </section>
-</main>
-
-  <footer>
-    <p>©2025 White Water Rafting Co. — Kyle Danielle Santiago</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook icon" width="32" height="32"></a>
-      <a href="https://linkedin.com"><img src="images/linkedin.png" alt="linkedin icon" width="32" height="32"></a>
-      <a href="https://instagram.com"><img src="images/icon-ig.png" alt="instagram icon" width="32" height="32"></a>
-    </nav>
-</footer>
-
 </body>
 </html>
