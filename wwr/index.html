@@ -1,69 +1,86 @@
-<!--November 13 2025-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle Danielle Santiago | WDD 130</title>
-    <meta name="description"
-        content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
-    <meta name="author" content="Kyle Danielle Santiago">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting - About Us</title>
+  <meta name="description" content="About White Water Rafting - our purpose, history, and adventures.">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="https://kylezanuz.github.io/wdd130/">Home</a>
-            <a href="https://kylezanuz.github.io/wdd130/wwr/about.html">Rafting Website</a>
-            <a href="https://www.linkedin.com/in/kyle-santiago-372456232/" target="_blank">LinkedIn Profile</a>
-            <a href="https://www.facebook.com/kyledzanuz" target="_blank">Facebook Profile</a>
-        </nav>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+          <nav>
+            <ul>
+              <li><a href="https://kylezanuz.github.io/wdd130/">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="trips.html">Trips</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
     </header>
 
-    <div class="grid">
-        <main>
-        <h1>Kyle Danielle Santiago | WDD 130</h1>
-        <img src="images/profile.png" alt="Kyle Danielle Santiago Profile Picture." width="200">
-        <p>Hi! My name is Kyle Danielle Santiago, and I’m from the Philippines. I’m currently a student at BYU–Idaho,
-            enrolled in
-            the Software Development program. I’ve been happily married for almost three years, and my spouse and I are
-            thrilled to
-            be expecting our first baby soon! It’s both exciting and a little scary, but it’s a chapter I’m deeply
-            grateful for.</p>
+    <main>
+      <section class="hero-about">
+        <img src="images/hero.jpg" alt="Rafting" class="hero-img">
+        <div class="hero-text-bg">
+          <h1>White Water Rafting Co</h1>
+          <p>We translate adventure into lifelong memories — guided, safe, and fun.</p>
+        </div>
+      </section>
 
-        <p>I’ve always been passionate about technology, creativity, and continuous learning. Through my studies, I hope
-            to sharpen
-            my development skills and create meaningful projects that can help and inspire others.</p>
+      <section class="box">
+        <h2>History</h2>
+        <div class="history">
+          <p style="color:var(--box-text);">Founded by river-lovers, we grew from small weekend trips to a full adventure operation with experienced guides.</p>
+          <p style="color:var(--box-text);">Our mission is safety, stewardship of nature, and unforgettable experiences for every guest.</p>
+        </div>
+      </section>
 
-        <p>Outside of school, I love watching movies — Harry Potter has always been my favorite — and lately, I’ve been
-            really into
-            anime. I’m also the eldest of six, which taught me early on about responsibility, patience, and caring for
-            others. It’s
-            a big part of who I am and why I always try to lead with empathy and purpose in everything I do.</p>
-        <ul class="box indent">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/cebu-city-philippines-temple?lang=eng"
-                    target="_blank">Cebu Philippines Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/manila-philippines-temple?lang=eng"
-                    target="_blank">Manila Philippines Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/cagayan-de-oro-philippines-temple?lang=eng"
-                    target="_blank">Cagayan de Oro Philippines Temple</a></li>
-        </ul>
-        </main>
-        <aside class="box">
-        <h2>Philippines</h2>
-        <img src="images/philippines.jpg" alt="Beautiful scenery of the Philippines">
-        <p>Luneta Shrine in the Philippines, also known as Rizal Park, is one of the largest urban parks in Asia, covering around 58 hectares. It’s famous for the Rizal Monument, which stands about 12.7 meters tall, and it marks the exact spot where Dr. José Rizal was executed on December 30, 1896.</p>
-        </aside>
-    </div>
+      <section class="box">
+        <h2>Adventure Awaits You!</h2>
+        <div class="adventure-gallery">
+          <figure class="card-img">
+            <img src="images/rafting.jpg" alt="White Water Rafting">
+            <figcaption style="color:var(--header-footer)">White Water Rafting</figcaption>
+          </figure>
 
-    <footer>
-        <p>&copy;2025 &#10070; Kyle Danielle Santiago &#10070; Iligan City, Philippines.</p>
+          <figure class="card-img">
+            <img src="images/rafting-splash.jpg" alt="Half-Day Whitewater Tour">
+            <figcaption style="color:var(--header-footer)">Half-Day Whitewater Tour</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/river-photography-tour.jpg" alt="River Photography Tour">
+            <figcaption style="color:var(--header-footer)">River Photography Tour</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/kayak.jpg" alt="Kayaking Adventure">
+            <figcaption style="color:var(--header-footer)">Kayaking Adventure</figcaption>
+          </figure>
+
+          <figure class="card-img">
+            <img src="images/overnight-rafting.jpg" alt="Overnight Rafting Trip">
+            <figcaption style="color:var(--header-footer)">Overnight Rafting Trip</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>©2025 White Water Rafting Co. — Kyle Danielle Santiago</div>
+      <div class="socialmedia">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/icon-ig.png" alt="Instagram"></a>
+      </div>
     </footer>
+  </div>
 </body>
-
 </html>
