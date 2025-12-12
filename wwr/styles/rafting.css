@@ -17,13 +17,13 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Page */
+
 html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font); color:#111; }
 
-/* Layout container */
+
 .wrapper{ max-width:var(--max-width); margin: 0 auto; padding: 18px; }
 
-/* Header / Nav same on all pages */
+
 .header {
   display: flex;
   justify-content: center;
@@ -88,7 +88,7 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 .hero .hero-overlay h1{ font-family:var(--heading-font); margin-bottom:6px; font-size:1.8rem; }
 .hero .hero-overlay p{ margin-top:6px; font-size:0.98rem; }
 
-/* Generic box style for sections requiring border, text color change inside */
+
 .box {
   background: var(--page-bg);
   border: 3px solid var(--box-border);
@@ -96,15 +96,15 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
   padding:18px;
   box-shadow: var(--shadow);
   margin-bottom:18px;
-  color: var(--box-text); /* text inside boxes per your spec */
-  padding: 24px; /* slightly more padding inside sections */
+  color: var(--box-text); 
+  padding: 24px; 
   margin-bottom: 30px;
 }
 
-/* center-title override when needed */
+
 .center-title { text-align:center; color:var(--header-footer); font-family:var(--heading-font); margin:18px 0; font-size:1.8rem; }
 
-/* Newsletter (form) */
+
 .form-inline{ display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
 .form-inline input[type="text"], .form-inline input[type="email"], .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
   padding:10px; border-radius:8px; border:2px solid var(--box-border); background:#fff; color:#111; width:100%;
@@ -124,14 +124,14 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
   box-shadow: 0 10px 22px rgba(38,70,83,0.16);
 }
 
-/* Grid for home items */
+
 .grid-3 {
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap:18px;
 }
 
-/* image cards centered and hover highlight */
+
 .card-img {
   text-align:center;
   padding:12px;
@@ -156,7 +156,7 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 .card-img h3{ margin-top:10px; color:var(--header-footer); font-family:var(--heading-font); }
 .card-img p{ margin-top:8px; color: #222; }
 
-/* Call-to-action button style */
+
 .cta-button {
   display:inline-block;
   background:var(--btn);
@@ -170,7 +170,7 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 }
 .cta-button:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(38,70,83,0.15); }
 
-/* Map + Contact layout */
+
 .map-form-section {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -180,13 +180,13 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 }
 
 .history p {
-  margin-bottom: 0px; /* space between each paragraph */
+  margin-bottom: 0px; 
   line-height: 1.6;
 }
 
 .history {
-  margin-top: 10px;   /* gap above history paragraphs */
-  margin-bottom: 10px; /* gap below history section */
+  margin-top: 10px;  
+  margin-bottom: 10px; 
 }
 
 .map-container, .contact-form {
@@ -198,12 +198,12 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 }
 .map-container iframe{ width:100%; height:100%; min-height:420px; border-radius:6px; display:block; border:2px solid #ddd; }
 
-/* Contact form */
+
 .contact-form{ display:flex; flex-direction:column; gap:10px; justify-content:space-between; }
 .contact-form label{ color:#222; font-weight:700; }
 .contact-form textarea{ min-height:140px; resize:vertical; }
 
-/* Team gallery */
+
 .team { display:block; text-align:center; padding:18px; margin:18px 0; }
 .employee-gallery{ display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
 .employee-card{
@@ -213,7 +213,7 @@ html,body{ height:100%; background:var(--page-bg); font-family:var(--body-font);
 .employee-card img:hover{ transform:translateY(-6px) scale(1.03); box-shadow:0 12px 28px rgba(12,83,86,0.12); }
 .employee-card figcaption{ margin-top:8px; color:var(--header-footer); font-weight:700; }
 
-/* Tables */
+
 table{ width:100%; border-collapse:collapse; margin-top:12px; }
 table th, table td{ padding:10px; border:2px solid var(--box-border); text-align:left; background:#fff; color:#111; }
 table thead th{ background:var(--header-footer); color:var(--box-text); font-weight:700; }
@@ -222,18 +222,18 @@ header, header a, footer {
 color: #edece1;
 }
 
-/* HEADER + FOOTER FONT COLOR CHANGE ONLY */
+
 header, header a, footer {
 color: #edece1;
 }
 
-/* FIX SPACING BETWEEN LOGO AND NAV */
+
 .header-container {
 display: flex;
 align-items: center;
 justify-content: center;
 padding: 1px 1px;
-gap: 40px; /* reduces space between logo & nav */
+gap: 40px;
 }
 
 .logo {
@@ -246,7 +246,7 @@ list-style: none;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 0; /* no extra space between Home, About, Trips, Contact */
+gap: 0; 
 margin: 0;
 padding: 0;
 }
@@ -257,11 +257,11 @@ color: #edece1;
 font-weight: 500;
 }
 
-/* ABOUT PAGE HERO FIX */
+
 .hero-about {
 position: relative;
 text-align: top;
-margin-bottom: 20px; /* bigger gap below hero image */
+margin-bottom: 20px;
 }
 
 .hero-img {
@@ -269,17 +269,17 @@ width: 100%;
 display: block;
 }
 
-/* BACKGROUND FOR H1 + P WITH 80% OPACITY, COLOR #c9b37b */
+
 .hero-text-bg {
 position: absolute;
 top: 90%;
 left: 30%;
 transform: translate(-40%, -70%);
-background-color: rgba(201, 179, 123, 0.8); /* 80% opacity */
+background-color: rgba(201, 179, 123, 0.8); 
 padding: 20px 20px;
 border-radius: 0px;
-font-size: 30px; /* very large text */
-line-height: 1;    /* optional, makes multi-line spacing tighter */
+font-size: 30px; 
+line-height: 1;   
 }
 
 .hero-text-bg h1, .hero-text-bg p {
@@ -287,17 +287,17 @@ margin: 0;
 color: #0c5356;
 }
 
-/* Center Contact Info Section */
+
 .company-info.center-box {
   text-align: center !important;
   margin: 0 auto 36px auto;
 }
 
-/* Adventure Awaits You Gallery - balanced layout */
+
 .adventure-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* center the rows */
+  justify-content: center; 
   gap: 16px;
   max-width: 800px;
   margin: 0 auto;
@@ -305,24 +305,24 @@ color: #0c5356;
 }
 
 .adventure-gallery img {
-  width: 180px; /* same width for all */
-  height: 160px; /* same height for all */
+  width: 180px; 
+  height: 160px; 
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* Force first row: 2 images centered */
+
 .adventure-gallery img:nth-child(1),
 .adventure-gallery img:nth-child(2) {
   flex: 0 0 auto;
 }
 
-/* Force second row: 3 images centered */
+
 .adventure-gallery img:nth-child(n+3) {
   flex: 0 0 auto;
 }
 
-/* Make rows stack nicely on smaller screens */
+
 @media(max-width: 600px) {
   .adventure-gallery {
     flex-direction: column;
@@ -334,7 +334,7 @@ color: #0c5356;
   }
 }
 
-/* Footer */
+
 .site-footer{
   margin-top:26px;
   background:var(--header-footer);
@@ -347,11 +347,11 @@ color: #0c5356;
 }
 .site-footer .socialmedia img{ width:28px; height:auto; filter:brightness(1.1); }
 
-/* utilities */
+
 .text-dark{ color:#111 !important; }
 .center{ text-align:center; }
 
-/* responsiveness */
+
 @media(max-width:900px){
   .map-form-section{ grid-template-columns:1fr; }
   .hero .hero-overlay{ max-width:95%; left:6px; right:6px; }
